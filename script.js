@@ -1,9 +1,12 @@
-function showAlert() {
-    alert("Button clicked!");
+
+window.onload = function() {
+    alert("Welcome to the Contact Us page!");
+};
+
+function logEmail() {
+    console.log("Email: abc@gmail.com");
 }
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".alert-button");
-    buttons.forEach(button => {
-        button.addEventListener("click", showAlert);
-    });
+    const emailParagraph = document.querySelector("main p:nth-of-type(2)");
+    emailParagraph.addEventListener("click", logEmail);
 });
